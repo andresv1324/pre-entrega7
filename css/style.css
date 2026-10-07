@@ -121,6 +121,163 @@ header .menu-icon span {
   display: block;
 }
 
+/* ============================= */
+/* MAIN - MOBILE */
+/* ============================= */
+.mainIndex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ============================= */
+/* TRAYECTORIA */
+/* ============================= */
+.trayectoriaIndex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bloqueTrayectoriaIndex {
+  display: block;
+}
+
+.bloqueHabilidadesIndex {
+  display: block;
+}
+
+.indexImgAlan {
+  display: none;
+}
+
+/* ============================= */
+/* LISTA */
+/* ============================= */
+.indexLista {
+  list-style: none;
+}
+
+/* ============================= */
+/* BIOGRAFÍA */
+/* ============================= */
+.indexBioInicio {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "indexT" "indexB1" "indexB2";
+  gap: 1rem;
+}
+
+/* ============================= */
+/* ÁREAS DEL GRID */
+/* ============================= */
+.indexTitulo {
+  grid-area: indexT;
+}
+
+.indexBioTexto1 {
+  grid-area: indexB1;
+}
+
+.indexBioTexto2 {
+  grid-area: indexB2;
+}
+
+/* ============================= */
+/* TABLET - 758px */
+/* ============================= */
+@media (min-width: 768px) {
+  /* ========================= */
+  /* TRAYECTORIA */
+  /* ========================= */
+  .trayectoriaIndex {
+    grid-area: trayectoria;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .bloqueTrayectoriaIndex {
+    display: none;
+  }
+  .bloqueHabilidadesIndex {
+    display: block;
+  }
+  .indexImgAlan {
+    display: block;
+  }
+  /* ========================= */
+  /* BIOGRAFÍA */
+  /* ========================= */
+  .indexBioInicio {
+    grid-area: bio;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "indexT indexT" "indexB1 indexB2";
+    gap: 1rem;
+  }
+}
+.indexImgAlan {
+  display: none;
+}
+
+/* ============================= */
+/* ESCRITORIO - 1024px */
+/* ============================= */
+@media (min-width: 1024px) {
+  /* ========================= */
+  /* MAIN INDEX */
+  /* ========================= */
+  .mainIndex {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  /* ========================= */
+  /* TRAYECTORIA */
+  /* ========================= */
+  .trayectoriaIndex {
+    display: grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "bloTraInd bloTraInd" "bloqHabInd bloImgInd";
+  }
+  .bloqueTrayectoriaIndex {
+    grid-area: bloTraInd;
+    display: block;
+  }
+  .bloqueHabilidadesIndex {
+    grid-area: bloqHabInd;
+    display: block;
+  }
+  .indexImgAlan {
+    grid-area: bloImgInd;
+    display: block;
+  }
+  /* ========================= */
+  /* BIOGRAFÍA */
+  /* ========================= */
+  .indexBioInicio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-areas: "indexT indexT" "indexB1 indexB1" "indexB2 indexB2";
+    gap: 1rem;
+  }
+  /* ========================= */
+  /* LISTA */
+  /* ========================= */
+  .indexLista {
+    list-style: none;
+  }
+  /* ========================= */
+  /* TRAYECTORIA */
+  /* ========================= */
+  .trayectoriaIndex {
+    gap: 0;
+  }
+}
 footer {
   padding: 1rem;
   background-color: #0B1020;
@@ -145,6 +302,70 @@ footer .redes {
 }
 footer .redes nav a {
   width: 2rem;
+}
+
+/* ============================= */
+/* CARDS */
+/* ============================= */
+.indexCard {
+  background-color: #1E3A5F;
+  color: #FFFFFF;
+  border: 1px solid #00D9FF;
+}
+.indexCard .card-title {
+  color: #00D9FF;
+}
+.indexCard .card-text {
+  color: #FFFFFF;
+}
+
+/* ============================= */
+/* ACORDEÓN */
+/* ============================= */
+#accordionTrayectoria {
+  /* Elemento del acordeón */
+}
+#accordionTrayectoria .accordion-item {
+  background-color: #1E3A5F;
+  border: 1px solid #00D9FF;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+#accordionTrayectoria {
+  /* Botón */
+}
+#accordionTrayectoria .accordion-button {
+  background-color: #1E3A5F;
+  color: #00D9FF;
+  border: none;
+  box-shadow: none;
+  transition: all 2s ease;
+}
+#accordionTrayectoria {
+  /* Botón cuando está abierto */
+}
+#accordionTrayectoria .accordion-button:not(.collapsed) {
+  background-color: #1E3A5F;
+  color: #00D9FF;
+  box-shadow: none;
+}
+#accordionTrayectoria {
+  /* Cuerpo */
+}
+#accordionTrayectoria .accordion-body {
+  background-color: #1E3A5F;
+  color: #FFFFFF;
+  border-top: 1px solid #00D9FF;
+}
+#accordionTrayectoria {
+  /* Focus */
+}
+#accordionTrayectoria .accordion-button:focus {
+  background-color: #263F70;
+  color: #66E8FF;
+  border: 1px solid #00D9FF;
+  box-shadow: 0 0 0 3px rgba(0, 217, 255, 0.25);
 }
 
 /*# sourceMappingURL=style.css.map */
