@@ -305,6 +305,142 @@ header .menu-icon span {
     padding: 20px;
   }
 }
+.mainGaleria {
+  background-color: #172554;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 8px;
+}
+
+.mainGaleria .galeriaCarrusel {
+  background-color: #1E3A5F;
+}
+
+.bloqueFotografia {
+  background-color: #263F70;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bloqueGaleria, .bloqueVideo, .bloqueConciertos {
+  background-color: #263F70;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.galeriaCarrusel {
+  width: 70%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.galeriaIframe {
+  display: block;
+}
+
+.carousel-caption {
+  display: none;
+}
+
+.carruselFoto3, .carruselFoto4, .bloqueConciertos {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .bloqueFotografia {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: "tituloF tituloF" "carr1F carr2F";
+  }
+  .bloqueVideo {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: "tituloV tituloV" "carr1V carr2V";
+  }
+  .bloqueFotografia h2 {
+    justify-self: center;
+    grid-area: tituloF;
+  }
+  .carruselFoto1 {
+    grid-area: carr1F;
+  }
+  .carruselFoto2 {
+    grid-area: carr2F;
+  }
+  .bloqueVideo h2 {
+    justify-self: center;
+    grid-area: tituloV;
+  }
+  .carruselVideo1 {
+    grid-area: carr1V;
+  }
+  .carruselVideo2 {
+    grid-area: carr2V;
+  }
+  .carousel-caption {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .carruselFoto3,
+  .carruselFoto4,
+  .bloqueConciertos {
+    display: block;
+  }
+  .mainGaleria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 6fr 6fr;
+    grid-template-areas: "tituloG . . ." "bloqFo bloqFo bloqFo bloqFo" "bloqVi bloqVi bloqCo bloqCo";
+  }
+  .bloqueConciertos {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-areas: "tituloG2" "concierto" "concierto";
+  }
+  .bloqueConciertos h2 {
+    justify-self: center;
+    grid-area: tituloG2;
+  }
+  .bloqueConciertos section {
+    grid-area: concierto;
+  }
+  .bloqueFotografia {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: "tituloF tituloF tituloF" "carr1F carr2F carr3F";
+  }
+  .bloqueVideo {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-areas: "tituloV" "carr1V" "carr2V";
+  }
+  .carruselFoto3 {
+    grid-area: carr3F;
+  }
+  .tituloGaleria {
+    grid-area: tituloG;
+  }
+  .bloqueFotografia {
+    grid-area: bloqFo;
+  }
+  .bloqueVideo {
+    grid-area: bloqVi;
+  }
+  .bloqueConciertos {
+    grid-area: bloqCo;
+  }
+}
 .listaGiras {
   display: grid;
   grid-template-columns: 1fr;
