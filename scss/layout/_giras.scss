@@ -29,14 +29,8 @@ iframe {
 
 .girasCompra {
     button {
-        background-color: $colorBotonFondo;
-        border: 1px solid $colorBotonBorde;
-        border-radius: 5px;
-        color: $colorBotonTexto;
-        padding: 8px 15px;
+        @extend %botonEstilo;
         width: auto;
-        display: block;
-        margin: 1rem auto;
     }
 }
 

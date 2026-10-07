@@ -59,14 +59,8 @@
 .bloqueFormContacto {
     form {
         button {
-            background-color: $colorBotonFondo;
-            border: 1px solid $colorBotonBorde;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            color: $colorBotonTexto;
+            @extend %botonEstilo;
             width: 30%;
-            display: block;
-            margin: 1rem auto;
         }
     }
 }
