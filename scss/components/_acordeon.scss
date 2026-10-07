@@ -9,7 +9,7 @@
 
 #accordionTrayectoria {
 
-    /* Elemento del acordeón */
+    //* Elemento del acordeón */
     .accordion-item {
         background-color: $colorAcordeon;
         border: 1px solid $colorAcordeonBorde;
@@ -19,7 +19,7 @@
     }
 
 
-    /* Botón */
+    //* Botón */
     .accordion-button {
         background-color: $colorAcordeon;
         color: $colorAcordeonTexto;
@@ -29,7 +29,7 @@
     }
 
 
-    /* Botón cuando está abierto */
+    //* Botón cuando está abierto */
     .accordion-button:not(.collapsed) {
         background-color: $colorAcordeon;
         color: $colorAcordeonTexto;
@@ -37,7 +37,7 @@
     }
 
 
-    /* Cuerpo */
+    //* Cuerpo */
     .accordion-body {
         background-color: $colorAcordeon;
         color: $colorTextoPrincipal;
@@ -45,7 +45,7 @@
     }
 
 
-    /* Focus */
+    //* Focus */
     .accordion-button:focus {
         background-color: $colorAcordeonFocus;
         color: $colorHeaderMenuHover;

@@ -682,18 +682,12 @@ footer .redes nav a {
 /* ============================= */
 /* ACORDEÓN */
 /* ============================= */
-#accordionTrayectoria {
-  /* Elemento del acordeón */
-}
 #accordionTrayectoria .accordion-item {
   background-color: #1E3A5F;
   border: 1px solid #00D9FF;
   border-radius: 5px;
   overflow: hidden;
   margin-bottom: 10px;
-}
-#accordionTrayectoria {
-  /* Botón */
 }
 #accordionTrayectoria .accordion-button {
   background-color: #1E3A5F;
@@ -702,24 +696,15 @@ footer .redes nav a {
   box-shadow: none;
   transition: all 2s ease;
 }
-#accordionTrayectoria {
-  /* Botón cuando está abierto */
-}
 #accordionTrayectoria .accordion-button:not(.collapsed) {
   background-color: #1E3A5F;
   color: #00D9FF;
   box-shadow: none;
 }
-#accordionTrayectoria {
-  /* Cuerpo */
-}
 #accordionTrayectoria .accordion-body {
   background-color: #1E3A5F;
   color: #FFFFFF;
   border-top: 1px solid #00D9FF;
-}
-#accordionTrayectoria {
-  /* Focus */
 }
 #accordionTrayectoria .accordion-button:focus {
   background-color: #263F70;
