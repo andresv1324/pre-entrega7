@@ -2,7 +2,11 @@
 @use "../utilities/extend" as *;
 @use "../utilities/mixin" as *;
 
+//3 VISTAS TERMINADAS
 
+/* ============================= */
+/* GALERIA - MOBILE */
+/* ============================= */
 .mainGaleria {
     background-color: $colorSectionFondo;
     display: grid;
@@ -15,18 +19,9 @@
     background-color: $colorArticleFondo;
 }
 
-.bloqueFotografia {
-    background-color: #263F70;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.bloqueGaleria,.bloqueVideo,.bloqueConciertos {
-    background-color: #263F70;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.bloqueGaleria,.bloqueVideo,.bloqueConciertos,.bloqueFotografia {
+    @extend %bloqueGaleria;
 }
 
 .galeriaCarrusel {
@@ -47,8 +42,10 @@
     display: none;
 }
 
-// 
 
+/* ============================= */
+/* GALERIA - TABLET */
+/* ============================= */ 
 @include tablet {
 
     .bloqueFotografia {
@@ -104,7 +101,9 @@
 
 
 
-// 
+/* ============================= */
+/* GALERIA - ESCRITORIO */
+/* ============================= */
 
 @include escritorio {
 

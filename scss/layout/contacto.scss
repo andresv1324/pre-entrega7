@@ -2,7 +2,11 @@
 @use "../utilities/extend" as *;
 @use "../utilities/mixin" as *;
 
+//3 VISTAS TERMINADAS
 
+/* ============================= */
+/* COMTACTO - MOBILE */
+/* ============================= */
 .mainContacto {
     @include grid(
         auto,
@@ -65,7 +69,9 @@
     }
 }
 
-
+/* ============================= */
+/* CONTACTO - TABLET */
+/* ============================= */
 @include tablet {
 
     .mainContacto {
@@ -84,7 +90,9 @@
     }
 }
 
-
+/* ============================= */
+/* CONTACTO - ESCRITORIO */
+/* ============================= */
 @include escritorio {
 
     .mainContacto {

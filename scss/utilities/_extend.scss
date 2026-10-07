@@ -2,12 +2,6 @@
 @use "mixin" as *;
 
 
-%botonAzulGeneral {
-    background-color: $colorBotonFondo;
-    color: $colorBotonTexto;
-    border: 1px solid $colorBotonBorde;
-    border-radius: 5px;
-}
 
 %botonEstilo {
     background-color: $colorBotonFondo;
@@ -17,4 +11,11 @@
     color: $colorBotonTexto;
     display: block;
     margin: 1rem auto;
+}
+
+%bloqueGaleria {
+    background-color: #263F70;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

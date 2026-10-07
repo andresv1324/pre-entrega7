@@ -11,6 +11,13 @@
   margin: 1rem auto;
 }
 
+.bloqueGaleria, .bloqueVideo, .bloqueConciertos, .bloqueFotografia {
+  background-color: #263F70;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -289,7 +296,7 @@ header .menu-icon span {
   }
 }
 /* ============================= */
-/* TABLET - 768px */
+/* ALBUM - ESCRITORIO */
 /* ============================= */
 @media (min-width: 1024px) {
   .mainAlbum {
@@ -315,6 +322,9 @@ header .menu-icon span {
     padding: 20px;
   }
 }
+/* ============================= */
+/* COMTACTO - MOBILE */
+/* ============================= */
 .mainContacto {
   display: grid;
   grid-template-columns: auto;
@@ -365,6 +375,9 @@ header .menu-icon span {
   width: 30%;
 }
 
+/* ============================= */
+/* CONTACTO - TABLET */
+/* ============================= */
 @media (min-width: 768px) {
   .mainContacto {
     display: grid;
@@ -377,6 +390,9 @@ header .menu-icon span {
     grid-area: bloqInfCon;
   }
 }
+/* ============================= */
+/* CONTACTO - ESCRITORIO */
+/* ============================= */
 @media (min-width: 1024px) {
   .mainContacto {
     background-color: #172554;
@@ -398,6 +414,9 @@ header .menu-icon span {
     width: 70%;
   }
 }
+/* ============================= */
+/* GALERIA - MOBILE */
+/* ============================= */
 .mainGaleria {
   background-color: #172554;
   display: grid;
@@ -408,20 +427,6 @@ header .menu-icon span {
 
 .mainGaleria .galeriaCarrusel {
   background-color: #1E3A5F;
-}
-
-.bloqueFotografia {
-  background-color: #263F70;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.bloqueGaleria, .bloqueVideo, .bloqueConciertos {
-  background-color: #263F70;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .galeriaCarrusel {
@@ -442,6 +447,9 @@ header .menu-icon span {
   display: none;
 }
 
+/* ============================= */
+/* GALERIA - TABLET */
+/* ============================= */
 @media (min-width: 768px) {
   .bloqueFotografia {
     width: 100%;
@@ -480,6 +488,9 @@ header .menu-icon span {
     display: none;
   }
 }
+/* ============================= */
+/* GALERIA - ESCRITORIO */
+/* ============================= */
 @media (min-width: 1024px) {
   .carruselFoto3,
   .carruselFoto4,
@@ -534,6 +545,9 @@ header .menu-icon span {
     grid-area: bloqCo;
   }
 }
+/* ============================= */
+/* GIRAS - MOBILE */
+/* ============================= */
 .listaGiras {
   display: grid;
   grid-template-columns: 1fr;

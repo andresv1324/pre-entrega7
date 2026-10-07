@@ -2,11 +2,11 @@
 @use "../utilities/extend" as *;
 @use "../utilities/mixin" as *;
 
+//3 VISTAS TERMINADAS
 
 /* ============================= */
 /* MAIN - MOBILE */
 /* ============================= */
-
 .mainIndex {
     display: flex;
     flex-direction: column;
@@ -131,7 +131,6 @@
 /* ============================= */
 /* ESCRITORIO - 1024px */
 /* ============================= */
-
 @include escritorio {
 
     /* ========================= */

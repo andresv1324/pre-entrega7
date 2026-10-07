@@ -1,13 +1,11 @@
 @use "../utilities/variables" as *;
 @use "../utilities/extend" as *;
 @use "../utilities/mixin" as *;
-
-
+// FALTAN VISTA MOBILE - TABLET ()
 
 /* ============================= */
-/* TABLET - 768px */
+/* ALBUM - ESCRITORIO */
 /* ============================= */
-
 @include escritorio {
 
     .mainAlbum {
