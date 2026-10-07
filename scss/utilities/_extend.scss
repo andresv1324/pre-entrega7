@@ -1,0 +1,15 @@
+@use "variables" as *;
+@use "mixin" as *;
+
+%estiloAzulCard {
+    background-color: $colorArticleFondo;
+    color: $colorBotonTexto;
+    border: 1px solid $colorBotonBorde;
+}
+
+%botonAzulGeneral {
+    background-color: $colorBotonFondo;
+    color: $colorBotonTexto;
+    border: 1px solid $colorBotonBorde;
+    border-radius: 5px;
+}
